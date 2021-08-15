@@ -15,7 +15,7 @@ function Orders({ orders }) {
 
         <div>{session ? <h2>{orders.length}</h2> : <h2>Sign in</h2>}</div>
         <div className="mt-5 space-y-4">
-          {orders.map((order) => (
+          {orders?.map((order) => (
             <Order key={order.id} order={order} />
           ))}
         </div>
